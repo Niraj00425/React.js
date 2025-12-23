@@ -5,6 +5,8 @@ import useRealtime from "./hooks/useRealtime";
 import NavBar from "./components/NavBar";
 import ProductCard from "./components/ProductCard";
 import CartPanel from "./components/CartPanel";
+import 'bootstrap/dist/js/bootstrap.bundle.min.js' //toggle to work
+
 
 export default function App() {
   const [products, setProducts] = useState(() => load("rt:products", seedProducts));
